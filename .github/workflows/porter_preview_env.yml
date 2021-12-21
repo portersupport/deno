@@ -9,9 +9,9 @@ jobs:
       uses: actions/checkout@v2.3.4
     - name: Create Porter preview env
       timeout-minutes: 30
-      uses: porter-dev/porter-preview-action@master
+      uses: porter-dev/porter-preview-action@trevor/enrich-github-metadata
       with:
-        action_id: ${{ github.job }}
+        action_id: ${{ github.run_id }}
         branch: ${{ github.head_ref }}
         cluster: "3"
         host: https://9567-14-36-69-116.ngrok.io
