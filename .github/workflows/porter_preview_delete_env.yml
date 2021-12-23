@@ -12,7 +12,7 @@ jobs:
       uses: porter-dev/porter-delete-preview-action@master
       with:
         cluster: "3"
-        host: https://1d12-14-36-69-116.ngrok.io
+        host: https://e0bb-14-36-69-116.ngrok.io
         installation_id: "21414420"
         namespace: pr-${{ github.event.pull_request.number }}-deno
         project: "1"
