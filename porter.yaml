@@ -11,6 +11,6 @@ resources:
     values:
       container:
         command: sleep infinity
-        port: 8000
+        port: 80
       ingress:
-        enabled: false
+        enabled: true
